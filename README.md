@@ -34,3 +34,23 @@ POST/Usuario/create {"id_usuario":3312,"Usuario":Dave Mustaine,"Contraseña": No
   ##### Delete
   Por ultimo usaremos el metodo delete (entre otras cosas) para borrar un usuario:
     DELETE/Usuario/{3312}
+---
+### Ejemplos de Cancion
+  ##### CREAR CANCION 
+    POST/Cancion/create {"id_cancion":1234,"Nombre":Tornado of Souls,"id_album":1002,"id_usuario":3312,"contLike":0,"contDislike":0}
+  ##### LEER DATOS DE CANCION 
+     GET/Cancion/{1234}
+  ##### ACTUALIZAR CANCION
+    PUT/cancion/{1234}  {"id_cancion":1234,"Nombre":Tornado of Souls,"id_album":1002,"id_usuario":3312,"contLike":200000,"contDislike":2}
+  ##### ELIMINAR CANCION
+    DELETE/cancion/{3312}
+---
+### Ejemplos de Album
+  ##### CREAR ALBUM
+    POST/Album/create {"id_album":1002,"id_usuario":3312,"Nombre":Rust In Peace,}
+  ##### LEER DATOS DE CANCION 
+     GET/Album/{1002}
+  ##### ACTUALIZAR CANCION
+    PUT/Album/{1002}  {"id_Album":1002,"id_usuario":3312,"Nombre":Countdown To Extinction}
+  ##### ELIMINAR CANCION
+    DELETE/Album/{1002}

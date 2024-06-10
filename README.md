@@ -6,7 +6,7 @@ Me llamo Francisco Gonzalez Bonorino estoy cursando la materia Diseño de sistem
 
 ### Estructura
 #### Este Sistema estara formado por:
-- Artista (int id_artista, String Usuario, String Contraseña)
+- Artista (int id_artista, String Nombre, String Contraseña)
 - Cancion (int id_cancion, String Nombre, id_album, int id_artista, int contLike, int contDislike)
 - Album (int id_album, int id_artista, String Nombre_album)
 
